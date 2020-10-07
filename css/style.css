@@ -1,0 +1,917 @@
+/*** Tipografía/Fuente ***/
+html{
+    font-size: 100%;
+}
+ *{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+} 
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* Fondo Colores */
+
+body{
+    background: #dfdfdf;
+}
+footer{
+    background: #bebebe;
+}
+
+/*** Header ***/
+header li a {
+    text-decoration: none;
+}
+
+/*** Logo Header ***/
+
+.logoHeader{
+    margin: 50px;
+}
+
+/*** Home ***/
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+/*** Fin NavBar ***/
+
+.bodyHome{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "footer"
+}
+
+
+.tituloHome{
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.home {
+    color: #999;
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+    grid-area: banner;
+    border: solid 3px blueviolet;
+}
+
+.home img{
+    width: 95%;
+    height: 95%;
+    padding: 10px;
+}
+
+
+/*** Discografía ***/
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+/*** Fin NavBar ***/
+.discos{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.tituloDiscos {
+    text-align: center;
+}
+
+.tituloDiscos h1{
+    font-size: 36px;
+}
+
+.tituloDiscos h2{
+    font-size: 24px;
+}
+
+.discos img{
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.discografiaDavidBowie{
+    color: #005a0f;
+}
+
+.discografiaSpaceOddity{
+    color: #0069af;
+}
+
+.discografiaTheManWhoSoldTheWorld{
+    color: #950000;
+}
+
+.discografiaHunkyDory{
+    color: #a1a327;
+}
+
+.discografiaZiggyStardust{
+    color: #fdd158;
+}
+/*** Historia ***/
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+
+/*** Fin NavBar ***/
+
+/*** GRID ***/
+
+/*** GRID Header***/
+header{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas: "img ul";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+
+ul{
+    grid-area: ul;
+    text-align: center;
+}
+
+div.logoHeader img {
+    grid-area: img;
+    align-self: center;
+    max-width: 200px;
+    justify-content: start;
+}
+/*** GRID Header Fin ***/
+
+footer{
+    background-color: rgb(0, 59, 114);
+    display: grid;
+    grid-template-areas: "p" "links"
+                         "p" "links";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1ft;
+}
+
+footer.p {
+    grid-area: p;
+    text-align: center;
+}
+
+footer.a {
+    grid-area: links;
+}
+
+
+
+/*** GRID Historia  ***/
+
+.comienzoHistoria{
+    
+    display: grid;
+    grid-template-areas: "img aside"
+                         "p aside";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto;  
+}
+
+.comienzoHistoria p{
+    grid-area: p;
+    align-self: center;
+    margin: 50px;
+}
+
+.comienzoHistoria a {
+    grid-area: img;
+    align-self: center;
+    margin: 20px;
+
+}
+
+.comienzoHistoria aside{
+    grid-area: aside;
+    align-self: center;
+    margin: 50px;
+}
+
+
+
+ .ziggyStardustHistoria{
+    display: grid;
+    grid-template-areas: "texto imagen"
+                         "texto imagen" ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto ;
+}
+
+.ziggyStardustHistoria a {
+    grid-area: imagen;
+    align-self: center;
+    margin: 30px;
+}
+
+.ziggyStardustHistoria p {
+    grid-area: texto;
+    align-self: center;
+    margin: 50px;
+} 
+
+
+.epocaOscuraHistoria{
+    display: grid;
+    grid-template-areas: 
+    "foto muchoTexto"
+    "foto muchoTexto";
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: auto 70% ;
+}
+
+.epocaOscuraHistoria a {
+    grid-area: foto;
+    align-self: center;
+    margin: 30px;
+}
+
+.epocaOscuraHistoria p {
+    grid-area: muchoTexto;
+    align-self: center;
+    margin: 50px;
+}
+
+
+.renacimientoHistoria {
+    display: grid;
+    grid-template-areas: 
+    "texto foto"
+    "texto foto";
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr auto;
+}
+
+.renacimientoHistoria a{
+    grid-area: foto;
+    align-self: center;
+    margin: 30px;
+}
+
+.renacimientoHistoria p {
+    grid-area: texto;
+    align-self: center;
+    margin: 50px;
+}
+
+
+.finDelCamino{
+    display: grid;
+    grid-template-areas:
+    "video texto"
+    "video texto";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto;
+}
+
+.finDelCamino a{
+    grid-area: video;
+    align-self: center;
+    margin: 30px;
+}
+
+.finDelCamino p{
+    grid-area: texto;
+    align-self: center;
+    margin: 50px;
+}
+
+/*** GRID Historia Fin ***/
+
+
+/*** FIN GRID ***/
+
+
+
+.barraHistoria{
+    margin: 20px;
+    margin-top: 200px;
+    background-color: #888888;
+    padding: 40px;
+}
+
+.barraHistoria :hover{
+    color: #fff;
+}
+
+.comienzoHistoria{
+    color:#005a0f;
+}   
+
+
+.comienzoHistoria p{
+    background-color: #777e78;
+    margin: 10px;
+}    
+
+.comienzoHistoria img{
+    height: 500px;
+    margin: 5px 20px;
+    border: solid 5px;
+}
+
+
+.bonusHistoria p {
+    width: 620px;
+
+}
+.bonusHistoria img{
+    width: 600px;
+    height: 800px;
+    
+}
+
+
+.tituloHistoria{
+    text-align: center;
+    color: blue;
+}
+
+.ziggyStardustHistoria{
+    color: #fdd158;
+}
+
+.ziggyStardustHistoria p{
+    display: inline-block;
+    background-color: rgb(119, 108, 108);
+    overflow: hidden;
+}
+
+.ziggyStardustHistoria img{
+    border: solid 3px;
+    width: 500px;
+}
+
+.epocaOscuraHistoria img{
+    width: 400px;
+}
+
+.epocaOscuraHistoria p {
+    display: inline-block;
+}
+
+.renacimientoHistoria img{
+    width: 500px;
+}
+
+.renacimientoHistoria p {
+    display: inline-block;
+}
+
+.finDelCamino img{
+    width: 900px;
+}
+
+.finDelCamino p {
+    display: inline-block;
+}
+
+/*** Makeup ***/
+
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+/*** Fin NavBar ***/
+
+.tituloMakeUp{
+    color: #888888;
+    text-align: center;
+}
+
+.makeups h2{
+    text-align: center;
+}
+
+.makeupZiggy{
+    color: rgb(223, 45, 131);
+}
+
+.makeupZiggy img{
+    width: 600px;
+    height: 700px;
+    margin: 5px;
+    border: solid 3px rgb(226, 73, 75);
+}
+
+.makeupAladdin{
+    color: rgb(226, 73, 75);
+}
+
+.makeupAladdin img{
+    width: 600px;
+    height: 600px;
+    margin: 5px;
+    border: solid 3px rgb(172, 163, 163);
+}
+
+.makeupScaryMonsters{
+    color: rgb(165, 168, 178);
+}
+
+.makeupScaryMonsters img{
+    width: 600px;
+    height: 600px;
+    margin: 5px;
+    border: solid 3px rgb(165, 168, 178);
+}
+
+.makeupLabyrinth{
+    color: rgb(146, 96, 71);
+}
+
+.makeupLabyrinth img{
+    width: 600px;
+    height: 500px;
+    margin: 5px;
+    border: solid 3px rgb(146, 96, 71);
+}
+
+.makeupHunkyDory{
+    color: rgb(186, 212, 229);
+}
+
+.makeupHunkyDory img{
+    width: 600px;
+    height: 600px;
+    margin: 5px;
+    border: solid 3px rgb(186, 212, 229);
+}
+
+/*** Vestimentas ***/
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+/*** Fin NavBar ***/
+
+.tituloVestimenta{
+    font-style: italic;
+    text-align: center;
+}
+
+
+.vestimentas h1{
+    color: #505050;
+}
+
+.vestimentasHunkyDory h2{
+    color: rgb(186, 212, 229);
+}
+.vestimentasHunkyDory img{
+    width: 900px;
+    height: 1200px;
+    border: 5px solid rgb(186, 212, 229);
+    margin: 10px;
+}
+
+.vestimentasZiggy h2{
+    color: rgb(215, 50, 44);
+}
+
+.vestimentasZiggy img{
+    width: 900px;
+    height: 1200px;
+    border: 5px solid rgb(215, 50, 44);
+    margin: 10px;
+}
+
+.vestimentasDiamondDogs h2{
+    color: rgb(50, 100, 187);
+}
+
+.vestimentasDiamondDogs img{
+    width: 900px;
+    height: 1200px;
+    border: 5px solid rgb(50, 100, 187);
+    margin: 10px;
+}
+
+.vestimentasStationToStation h2{
+    color: #888888;
+}
+
+.vestimentasStationToStation img{
+    width: 900px;
+    height: 1200px;
+    border: 5px solid #888888;
+    margin: 10px;
+}
+
+.vestimentasUnionJacket h2{
+    color: rgb(180, 1, 20);
+}
+
+.vestimentasUnionJacket img{
+    width: 900px;
+    height: 1200px;
+    border: 5px solid rgb(180, 1, 20);
+    margin: 10px;
+}
+
+/*** Contacto ***/
+/*** NavBar ***/
+
+ul {
+    list-style: none;
+    font-size:0 ;
+}
+li {
+    display: inline-block;
+    width: 20%;
+    position:relative;
+    font-size: 24px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+/*** Fin NavBar ***/
+
+.contacto{
+    font-style: italic;
+    text-align: center;
+}
+
+.contacto img{
+    margin-bottom: 20px;
+}
+
+/*** Adaptación Tablet ***/
+@media only screen and (min-width:600px) and (max-width:768px) {
+    
+    header{
+        display: grid;
+        grid-template-areas: 
+        "logo barra"
+        "logo barra"
+        ;
+        grid-template-rows:  1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header .logoHeader{
+        grid-area: logo;
+        align-self: center;
+    }
+
+    header nav{
+        grid-area: barra;
+        align-self: center;
+        margin: 5px;
+        display: inline;
+    }
+    
+    .home{
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "footer";
+    }
+    .bodyHome img{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .logoHeader{
+        width: 30%;
+        height: 30%;
+        
+    }
+
+    .home img{
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        font-size:0 ;
+    }
+    li {
+        display: inline-block;
+        width: 100%;
+        position:relative;
+        font-size: 24px;
+    }
+    
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    
+    ul ul li {
+        display: block;
+    }
+    
+    ul li:hover ul {
+        display: block;
+    }
+
+    footer{
+        background-color: rgb(43, 226, 226);
+    }
+}
+
+
+
+/*** Adaptación Mobile ***/
+
+@media only screen and (max-width:320px)
+{
+
+    header{
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "barra";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header .logoHeader{
+        grid-area: logo;
+        align-self: center;
+    }
+
+    header nav{
+        grid-area: barra;
+        align-self: center;
+        margin: 5px;
+    }
+
+    .home{
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "footer";
+    }
+    
+    .headerHome {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    .home img{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    ul {
+        list-style: none;
+        font-size:0 ;
+    }
+    li {
+        display: inline-block;
+        width: 70%;
+        position:relative;
+        font-size: 24px;
+    }
+    
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    
+    ul ul li {
+        display: block;
+    }
+    
+    ul li:hover ul {
+        display: block;
+    }
+
+    footer{
+        background-color: blueviolet;
+    }
+}
+
+
+@media only screen and (min-width:321px) and (max-width: 599px)
+{
+
+    header{
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "barra";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header .logoHeader{
+        grid-area: logo;
+        align-self: center;
+    }
+
+    header nav{
+        grid-area: barra;
+        align-self: center;
+        margin: 5px;
+    }
+
+    .home{
+        display: grid;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "footer"
+    }
+    
+    .headerHome {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logoHeader{
+        width: 100%;
+        height: 100%;
+    }
+
+    .bodyHome img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .home img{
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        font-size:0 ;
+    }
+    li {
+        display: inline-block;
+        width: 70%;
+        position:relative;
+        font-size: 24px;
+    }
+    
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    
+    ul ul li {
+        display: block;
+    }
+    
+    ul li:hover ul {
+        display: block;
+    }
+
+    footer{
+        background-color: rgb(245, 220, 0);
+    }
+}
